@@ -1,11 +1,4 @@
-const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
- 
-  function openModal(button) {
+function openModal(button) {
     const modal = document.getElementById("modal");
     const content = document.getElementById("modalContent");
 
