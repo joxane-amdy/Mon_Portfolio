@@ -26,7 +26,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
+      /// partie formation
   function openModal(button) {
     const modal = document.getElementById("modal");
     const content = document.getElementById("modalContent");
@@ -57,3 +57,4 @@ document.addEventListener("click", (e) => {
       modal.classList.remove("flex");
     }, 300);
   }
+  
