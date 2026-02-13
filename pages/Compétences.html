@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/output.css">
+  <script src="Script.js" defer></script>
+  <title>Amdy-informaticien</title>
+</head>
+<body class="bg-[#0B132B] ">
+
+  <header class="max-w-7xl mx-auto mt-6 px-6 rounded-full border-2 border-[#F97316]">
+    <nav class="bg-[#111827] rounded-full px-8 py-4 flex items-center justify-between shadow-lg relative">
+      <div class="flex items-center gap-2">
+        <span class="text-orange-400 font-bold text-lg">Portfolio.</span>
+      </div>
+
+      <ul class="hidden md:flex gap-8 text-gray-300 text-sm font-semibold">
+        <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
+        <li><a href="Apropos.html" class="hover:text-orange-400 transition">À PROPOS</a></li>
+        <li><a href="Formation.html" class="hover:text-orange-400 transition">FORMATION</a></li>
+        <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
+        <li><a href="Compétences.html" class="hover:text-orange-400 transition">COMPETENCES</a></li>
+        <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
+        <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
+      </ul>
+
+      <div class="md:hidden relative">
+        <button id="menu-btn" class="text-gray-300 focus:outline-none text-2xl">☰</button>
+        <ul id="mobile-menu" class="hidden absolute right-0 mt-2 w-48 bg-[#111827] rounded-lg shadow-lg py-4 flex-col gap-4 text-gray-300 text-sm font-semibold px-4 z-50">
+          <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
+          <li><a href="Apropos.html" class="hover:text-orange-400 transition">À PROPOS</a></li>
+          <li><a href="Formation.html" class="hover:text-orange-400 transition">FORMATION</a></li>
+          <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
+          <li><a href="Compétences.html" class="hover:text-orange-400 transition">COMPETENCES</a></li>
+          <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
+          <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="flex-grow">
+    <section class="flex flex-col items-center mt-10 px-4">
+      <h1 class="text-5xl font-bold mb-4 text-white text-center">
+        Mes <span class="text-orange-400">compétences</span>
+      </h1>
+      <p class="text-white text-center max-w-2xl">
+        Voici un aperçu de mes compétences techniques et des domaines dans lesquels je me spécialise.
+      </p>
+    </section>
+
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 justify-items-center px-4 md:px-12">
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_orange]">
+        <img src="../images/html-5.png" alt="HTML" class="w-10 mb-2">
+        <p class="text-sm">HTML</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_blue]">
+        <img src="../images/css-3.png" alt="CSS" class="w-10 mb-2">
+        <p class="text-sm">CSS</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_cyan]">
+        <img src="../images/tailwind.png" alt="Tailwind" class="w-10 mb-2">
+        <p class="text-sm">Tailwind</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_yellow]">
+        <img src="../images/java-script.png" alt="JavaScript" class="w-10 mb-2">
+        <p class="text-sm">JavaScript</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_green]">
+        <img src="../images/python.png" alt="Python" class="w-10 mb-2">
+        <p class="text-sm">Python</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_red]">
+        <img src="../images/java.png" alt="Java" class="w-10 mb-2">
+        <p class="text-sm">Java</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_white]">
+        <img src="../images/langage C.png" alt="C" class="w-10 mb-2">
+        <p class="text-sm">Langage C</p>
+      </div>
+      <div class="bg-gray-900 text-white rounded-xl w-32 aspect-square flex flex-col items-center justify-center hover:scale-105 transition duration-300 hover:shadow-[0_0_20px_pink]">
+        <img src="../images/mysql-database.png" alt="MySQL" class="w-10 mb-2">
+        <p class="text-sm">MySQL</p>
+      </div>
+    </section>
+  </section>
+
+
+  <footer class="bg-black text-white text-center mt-32  py-4">
+    <div class="flex justify-center gap-3 mb-2">
+      <a href="https://github.com/joxane-amdy/Mon_Portfolio"><img src="../images/github.png" class="w-10 h-10"></a>
+      <a href="www.linkedin.com/in/amdy-diokhané-8118a7394"><img src="../images/linkedin.png" class="w-10 h-10"></a>
+      <a href="#"><img src="../images/instagram.png" class="w-10 h-10"></a>
+      <a href="#"><img src="../images/facebook.png" class="w-10 h-10"></a>
+      <a href="#"><img src="../images/snapchat.png" class="w-10 h-10"></a>
+    </div>
+    <p>© AMDY 2026. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

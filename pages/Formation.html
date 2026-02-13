@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <script src="Script.js" defer></script>
+    <title>Amdy-informaticien</title>
+</head>
+<body class="bg-[#0B132B]">
+    <header class="max-w-7xl mx-auto mt-6 px-6 rounded-full border-2 border-[#F97316]">
+        <nav class="bg-[#111827] rounded-full px-8 py-4 flex items-center justify-between shadow-lg relative">
+            <div class="flex items-center gap-2">
+                <span class="text-orange-400 font-bold text-lg">Portfolio.</span>
+            </div>
+
+            <ul class="hidden md:flex gap-8 text-gray-300 text-sm font-semibold">
+                <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
+                <li><a href="Apropos.html" class="hover:text-orange-400 transition"> À PROPOS</a></li>
+                <li><a href="Formation.html" class="hover:text-orange-400 transition"> FORMATION</a></li>
+                <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
+                <li><a href="Compétences.html" class="hover:text-orange-400 transition"> COMPETENCES</a></li>
+                <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
+                <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
+            </ul>
+
+            <div class="md:hidden relative">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none text-2xl">
+                        ☰
+                </button>
+
+                <ul id="mobile-menu" class="hidden absolute right-0 mt-2 w-48 bg-[#111827] rounded-lg shadow-lg py-4 flex-col gap-4 text-gray-300 text-sm font-semibold px-4 z-50">
+                    <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
+                    <li><a href="Apropos.html" class="hover:text-orange-400 transition"> À PROPOS</a></li>
+                    <li><a href="Formation.html" class="hover:text-orange-400 transition"> FORMATION</a></li>
+                    <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
+                    <li><a href="Compétences.html" class="hover:text-orange-400 transition"> COMPETENCES</a></li>
+                    <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
+                    <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+        
+    <section class="min-h-screen flex flex-col items-center  px-6 mt-3">
+        <div class="text-center mt-3">
+             <h1 class="text-5xl font-bold mb-3 text-white">Mon <span class="text-orange-400">parcours</span></h1>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10  mt-10 px-4 flex items-center">
+
+
+            <div>
+                    <div class="bg-white/5 border border-orange-400 rounded-2xl p-6 backdrop-blur-md">
+                        <p class="text-sm text-orange-400 mb-2">2025 - Présent</p>
+                        <h3 class="text-xl font-semibold text-white">
+                            L’Univers professionelle UNIPRO
+                        </h3>
+
+                        <p class="text-orange-400 text-sm mb-4">Licence en Génie informatique</p>
+
+                        <button 
+                            class="mt-4 w-full bg-orange-400 text-black py-2 rounded-xl font-medium hover:bg-orange-500 transition"
+                            onclick="openModal(this)"
+                            data-title="L’Univers professionelle UNIPRO"
+                            data-subtitle="Licence en Génie informatique"
+                            data-date="2025-Présent"
+                            data-description="Actuellement en formation professionnelle de deux ans en Génie informatique à l' univers professionnelle UNIPRO. Catte formation est orientée vers la pratique et développement de compétences techniques solides, notamment en programmation, développement web, algorithmique, bases de données et systèmes informatique, afin de répondre aux exigences du mondeprofessionnel.">
+                            Voir les détails
+                        </button>
+                    </div>
+                    <div id="modal"
+                        class="fixed inset-0 z-50 hidden items-center justify-center
+                        bg-black/50 backdrop-blur-md">
+
+                        <div class="relative max-w-2xl w-full mx-4
+                            bg-[#121212] border border-white/10
+                            rounded-2xl p-8 text-white
+                            scale-95 opacity-0 transition-all duration-300"
+                            id="modalContent">
+
+                            <!-- Close -->
+                            <button onclick="closeModal()"
+                                class="absolute top-4 right-4 text-xl text-white/60 hover:text-white">
+                                ✕
+                            </button>
+                            <p id="modalDate" class="text-orange-400 text-sm mb-2"></p>
+                            <h2 id="modalTitle" class="text-2xl font-bold mb-1"></h2>
+                            <p id="modalSubtitle" class="text-oragne-400 mb-4"></p>
+                            <p id="modalDescription" class="text-white/80 leading-relaxed"></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div>
+                    <div class="bg-white/5 border border-orange-400 rounded-2xl p-6 backdrop-blur-md">
+                        <p class="text-sm text-orange-400 mb-2">2022 - 2024</p>
+                        <h3 class="text-xl font-semibold text-white">
+                            Lycée FG — Touba
+                        </h3>
+
+                        <p class="text-orange-400 text-sm mb-4">Baccalauréat – Série S2</p>
+
+                        <button 
+                            class="mt-4 w-full bg-orange-400 text-black py-2 rounded-xl font-medium hover:bg-orange-500 transition"
+                            onclick="openModal(this)"
+                            data-title="Lycée FG (École Privée Fallou Glasse) — Touba"
+                            data-subtitle="Baccalauréat – Série S2"
+                            data-date="2022-2024"
+                            data-description="Obtention du baccalauréat scientifique (S2) avec une formation centrée sur les mathématiques, les sciences physiques et les sciences de la vie et de la terre, développant rigueur scientifique et méthodologie de travail.">
+                            Voir les détails
+                        </button>
+                    </div>
+                    <div id="modal"
+                        class="fixed inset-0 z-50 hidden items-center justify-center
+                        bg-black/50 backdrop-blur-md">
+
+                        <div class="relative max-w-2xl w-full mx-4
+                            bg-[#121212] border border-white/10
+                            rounded-2xl p-8 text-white
+                            scale-95 opacity-0 transition-all duration-300"
+                            id="modalContent">
+
+                            <!-- Close -->
+                            <button onclick="closeModal()"
+                                class="absolute top-4 right-4 text-xl text-white/60 hover:text-white">
+                                ✕
+                            </button>
+                            <p id="modalDate" class="text-orange-400 text-sm mb-2"></p>
+                            <h2 id="modalTitle" class="text-2xl font-bold mb-1"></h2>
+                            <p id="modalSubtitle" class="text-oragne-400 mb-4"></p>
+                            <p id="modalDescription" class="text-white/80 leading-relaxed"></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div>
+                    <div class="bg-white/5 border border-orange-400 rounded-2xl p-6 backdrop-blur-md">
+                        <p class="text-sm text-orange-400 mb-2">2018 - 2021</p>
+                        <h3 class="text-xl font-semibold text-white">
+                            GPCAAM — Touba
+                        </h3>
+
+                        <p class="text-orange-400 text-sm mb-4">Collége</p>
+
+                        <button 
+                            class="mt-4 w-full bg-orange-400 text-black py-2 rounded-xl font-medium hover:bg-orange-500 transition"
+                            onclick="openModal(this)"
+                            data-title="Collége GPCAAM (Groupe Privée Cheikh Abdoul Ahat Mbacké) — Touba"
+                            data-subtitle="Collége"
+                            data-date="2018 - 2021"
+                            data-description="Obtention du BFEM au collège GPCAAM (Groupe Privé Cheikh Ahmadou Bamba) à Touba, où j’ai suivi un cursus général renforçant les bases en sciences, mathématiques et culture générale 2018 – 2021.">
+                            Voir les détails
+                        </button>
+                    </div>
+                    <div id="modal"
+                        class="fixed inset-0 z-50 hidden items-center justify-center
+                        bg-black/50 backdrop-blur-md">
+
+                        <div class="relative max-w-2xl w-full mx-4
+                            bg-[#121212] border border-white/10
+                            rounded-2xl p-8 text-white
+                            scale-95 opacity-0 transition-all duration-300"
+                            id="modalContent">
+
+                            <!-- Close -->
+                            <button onclick="closeModal()"
+                                class="absolute top-4 right-4 text-xl text-white/60 hover:text-white">
+                                ✕
+                            </button>
+                            <p id="modalDate" class="text-orange-400 text-sm mb-2"></p>
+                            <h2 id="modalTitle" class="text-2xl font-bold mb-1"></h2>
+                            <p id="modalSubtitle" class="text-oragne-400 mb-4"></p>
+                            <p id="modalDescription" class="text-white/80 leading-relaxed"></p>
+                        </div>
+                    </div>
+            </div>
+
+            <div>
+                    <div class="bg-white/5 border border-orange-400 rounded-2xl p-6 backdrop-blur-md">
+                        <p class="text-sm text-orange-400 mb-2">2012 - 2017</p>
+                        <h3 class="text-xl font-semibold text-white">
+                            GPCAAM — Touba
+                        </h3>
+
+                        <p class="text-orange-400 text-sm mb-4">Primaire</p>
+
+                        <button 
+                            class="mt-4 w-full bg-orange-400 text-black py-2 rounded-xl font-medium hover:bg-orange-500 transition"
+                            onclick="openModal(this)"
+                            data-title="Collége GPCAAM (Groupe Privée Cheikh Abdoul Ahat Mbacké) — Touba"
+                            data-subtitle="Primaire"
+                            data-date="2012 - 2017"
+                            data-description="Obtention du CFEE à l’école primaire GPCAAM (Groupe Privé Cheikh Ahmadou Bamba) à Touba, où j’ai suivi un cursus général de 2012 à 2017, consolidant les bases en lecture, écriture et mathématiques.">
+                            Voir les détails
+                        </button>
+                    </div>
+                    <div id="modal"
+                        class="fixed inset-0 z-50 hidden items-center justify-center
+                        bg-black/50 backdrop-blur-md">
+
+                        <div class="relative max-w-2xl w-full mx-4
+                            bg-[#121212] border border-white/10
+                            rounded-2xl p-8 text-white
+                            scale-95 opacity-0 transition-all duration-300"
+                            id="modalContent">
+
+                            <!-- Close -->
+                            <button onclick="closeModal()"
+                                class="absolute top-4 right-4 text-xl text-white/60 hover:text-white">
+                                ✕
+                            </button>
+                            <p id="modalDate" class="text-orange-400 text-sm mb-2"></p>
+                            <h2 id="modalTitle" class="text-2xl font-bold mb-1"></h2>
+                            <p id="modalSubtitle" class="text-oragne-400 mb-4"></p>
+                            <p id="modalDescription" class="text-white/80 leading-relaxed"></p>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <footer class="bg-black text-white justify-center text-center py-2">
+        <div class="mt-6 flex justify-center">
+            <ul class="flex gap-3">
+                <li><a href="https://github.com/joxane-amdy/Mon_Portfolio"><img src="../images/github.png" class="w-10 h-10"></a></li>
+                <li><a href="www.linkedin.com/in/amdy-diokhané-8118a7395"><img src="../images/linkedin.png" class="w-10 h-10"></a></li>
+                <li><a href="#"><img src="../images/instagram.png" class="w-10 h-10"></a></li>
+                <li><a href="#"><img src="../images/facebook.png" class="w-10 h-10"></a></li>
+                <li><a href="#"><img src="../images/snapchat.png" class="w-10 h-10"></a></li>
+            </ul>
+        </div>
+        <p>© AMDY 2026. Tous droits réservés.</p>
+    </footer>
+
+
+</body>
+</html>
