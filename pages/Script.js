@@ -1,4 +1,33 @@
-function openModal(button) {
+// Sélection des éléments
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+// État du menu (ouvert/fermé)
+let menuOpen = false;
+
+// Écoute du clic sur le bouton
+menuBtn.addEventListener("click", () => {
+  menuOpen = !menuOpen; // inverse l'état
+  if (menuOpen) {
+    mobileMenu.classList.remove("hidden"); // affiche le menu
+    mobileMenu.classList.add("flex");      // flex-col pour les items
+  } else {
+    mobileMenu.classList.add("hidden");    // cache le menu
+    mobileMenu.classList.remove("flex");
+  }
+});
+
+// Optionnel : fermer le menu si on clique en dehors
+document.addEventListener("click", (e) => {
+  if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.remove("flex");
+    menuOpen = false;
+  }
+});
+
+
+  function openModal(button) {
     const modal = document.getElementById("modal");
     const content = document.getElementById("modalContent");
 

@@ -7,25 +7,40 @@
     <script src="Script.js" defer></script>
     <title>Amdy-informaticien</title>
 </head>
-<body class="bg-[#0B132B] min-h-screen flex flex-col">
-    <header class="max-w-7xl mx-auto mt-6 px-6">
-        <nav class="bg-[#111827] rounded-2xl px-6 py-4 shadow-lg border border-orange-500">
-            <div class="flex flex-wrap items-center justify-between gap-4">
-                <div class="text-orange-400 font-bold text-lg">
-                    Portfolio.
-                </div>
-                <ul class="flex flex-wrap gap-6 text-gray-300 text-sm font-semibold justify-center">
+<body class="bg-[#0B132B]">
+    <header class="max-w-7xl mx-auto mt-6 px-6 rounded-full border-2 border-[#F97316]">
+        <nav class="bg-[#111827] rounded-full px-8 py-4 flex items-center justify-between shadow-lg relative">
+            <div class="flex items-center gap-2">
+                <span class="text-orange-400 font-bold text-lg">Portfolio.</span>
+            </div>
+
+            <ul class="hidden md:flex gap-8 text-gray-300 text-sm font-semibold">
+                <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
+                <li><a href="Apropos.html" class="hover:text-orange-400 transition"> À PROPOS</a></li>
+                <li><a href="Formation.html" class="hover:text-orange-400 transition"> FORMATION</a></li>
+                <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
+                <li><a href="Compétences.html" class="hover:text-orange-400 transition"> COMPETENCES</a></li>
+                <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
+                <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
+            </ul>
+
+            <div class="md:hidden relative">
+                <button id="menu-btn" class="text-gray-300 focus:outline-none text-2xl">
+                        ☰
+                </button>
+
+                <ul id="mobile-menu" class="hidden absolute right-0 mt-2 w-48 bg-[#111827] rounded-lg shadow-lg py-4 flex-col gap-4 text-gray-300 text-sm font-semibold px-4 z-50">
                     <li><a href="Accueil.html" class="hover:text-orange-400 transition">ACCUEIL</a></li>
-                    <li><a href="Apropos.html" class="hover:text-orange-400 transition">À PROPOS</a></li>
-                    <li><a href="Formation.html" class="hover:text-orange-400 transition">FORMATION</a></li>
+                    <li><a href="Apropos.html" class="hover:text-orange-400 transition"> À PROPOS</a></li>
+                    <li><a href="Formation.html" class="hover:text-orange-400 transition"> FORMATION</a></li>
                     <li><a href="Expériences.html" class="hover:text-orange-400 transition">EXPERIENCE</a></li>
-                    <li><a href="Compétences.html" class="hover:text-orange-400 transition">COMPETENCES</a></li>
+                    <li><a href="Compétences.html" class="hover:text-orange-400 transition"> COMPETENCES</a></li>
                     <li><a href="Projets.html" class="hover:text-orange-400 transition">PROJETS</a></li>
-                    <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACT</a></li>
+                    <li><a href="Contact.html" class="hover:text-orange-400 transition">CONTACTS</a></li>
                 </ul>
             </div>
         </nav>
-    </header>  
+    </header>
 
 
         
@@ -209,18 +224,18 @@
         </div>
     </section>
     
-    <div class="bg-black text-white justify-center text-center py-2">
+    <footer class="bg-black text-white justify-center text-center py-2">
         <div class="mt-6 flex justify-center">
             <ul class="flex gap-3">
-                <li><a href="https://github.com"><img src="../images/github.png" class="w-10 h-10"></a></li>
-                <li><a href="#"><img src="../images/linkedin.png" class="w-10 h-10"></a></li>
+                <li><a href="https://github.com/joxane-amdy/Mon_Portfolio"><img src="../images/github.png" class="w-10 h-10"></a></li>
+                <li><a href="www.linkedin.com/in/amdy-diokhané-8118a7394"><img src="../images/linkedin.png" class="w-10 h-10"></a></li>
                 <li><a href="#"><img src="../images/instagram.png" class="w-10 h-10"></a></li>
                 <li><a href="#"><img src="../images/facebook.png" class="w-10 h-10"></a></li>
                 <li><a href="#"><img src="../images/snapchat.png" class="w-10 h-10"></a></li>
             </ul>
         </div>
         <p>© AMDY 2026. Tous droits réservés.</p>
-    </div>
+    </footer>
 
 
 </body>
